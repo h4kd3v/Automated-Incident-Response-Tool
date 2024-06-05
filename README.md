@@ -123,26 +123,26 @@ project_root/
 ### playbooks/malware_response.yml
 .
     ```yaml
-    - name: Malware Incident Response
-        hosts: localhost
-        tasks:
-            - name: Isolate infected host
-            script: isolate_host.py
+            - name: Malware Incident Response
+            hosts: localhost
+            tasks:
+                - name: Isolate infected host
+                script: isolate_host.py
 
-            - name: Block malicious IP
-            script: block_ip.py
+                - name: Block malicious IP
+                script: block_ip.py
 
-            - name: Fetch threat intelligence
-            script: fetch_threat_intelligence.py
+                - name: Fetch threat intelligence
+                script: fetch_threat_intelligence.py
 
-            - name: Notify security team
-            script: send_email.py
+                - name: Notify security team
+                script: send_email.py
 
-            - name: Notify via Slack
-            script: notify_slack.py
+                - name: Notify via Slack
+                script: notify_slack.py
 
-            - name: Generate incident report
-            script: generate_report.py
+                - name: Generate incident report
+                script: generate_report.py
 
 
 ## Contributing
